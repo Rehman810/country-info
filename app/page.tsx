@@ -36,7 +36,7 @@ const HomePage = () => {
           variant="h6"
           sx={{ color: "#7f8c8d" }}>
           Find information about any country by
-          it's name.
+          it&apos;s name.
         </Typography>
       </Box>
       <SearchForm />

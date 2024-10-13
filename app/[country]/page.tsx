@@ -9,6 +9,14 @@ import {
 } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+interface Country {
+  name: string;
+  capital: string;
+  population: number;
+  language: string;
+  currency: string;
+}
+
 const CountryPage = ({
   params,
 }: {
@@ -16,9 +24,9 @@ const CountryPage = ({
 }) => {
   const { country } = params;
   const [countryData, setCountryData] =
-    useState<any>(null);
+    useState<Country | null>(null);
   const [error, setError] = useState<
-    null | string
+    string | null
   >(null);
 
   useEffect(() => {
